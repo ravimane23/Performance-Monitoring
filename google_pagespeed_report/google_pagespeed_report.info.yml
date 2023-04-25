@@ -1,0 +1,5 @@
+name: Performance Monitoring
+type: module
+description: Record the performance of the pages and show it in reports.
+core_version_requirement: ^9 || ^10
+package: performance_monitoring

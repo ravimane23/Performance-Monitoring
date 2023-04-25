@@ -1,0 +1,4 @@
+services:
+  google_pagespeed_report.get_google_pagespeed_report_report:
+    class: Drupal\google_pagespeed_report\GetPageSpeedReport
+    arguments: ['@http_client', '@config.factory', '@cache.default', '@logger.factory', '@datetime.time']

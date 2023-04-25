@@ -1,0 +1,12 @@
+google_pagespeed_report.admin_settings_config:
+  title: 'Google PageSpeed Configuration'
+  route_name: google_pagespeed_report.pagespeed_admin_config
+  description: 'Google PageSpeed Configurations'
+  parent: system.admin_config_system
+  weight: 99
+
+google_pagespeed_report.report_details:
+  title: 'Google PageSpeed Report'
+  route_name: google_pagespeed_report.pagespeed_report_controller
+  description: 'Google PageSpeed Configurations'
+  parent: system.admin_reports

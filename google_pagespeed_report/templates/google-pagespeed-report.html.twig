@@ -1,0 +1,43 @@
+{% if message is not empty %}
+  {{ message | render }}
+{% else %}
+<h2> {{ 'Google Pagespeed Report'|t }} </h2>
+
+<table>
+    <tr>
+      <th> </th>
+    {% for key, data in information_data %}
+      <th>
+        {{ key }}
+      </th>
+    {% endfor %}
+    </tr>
+    {% for key, data in statistics_data %}
+      <tr>
+        <td>
+          {{ key }}
+        </td>
+        {% for row_data in data %}
+          <td>
+            {{ row_data.1 }}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+</table>
+
+<h4> {{ 'Description'|t }} </h4>
+
+<table>
+  {% for key, info in information_data %}
+    <tr>
+      <td>
+        <strong>{{ key }}</strong>
+      </td>
+      <td>
+        {{ info }}
+      </td>
+    <tr>
+  {% endfor %}
+</table>
+{% endif %}

@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Google Pagespeed report module file.
+ * This will add a custom template to display google page speed.
+ */
+
+/*
+ * Implements hook_theme().
+ */
+function google_pagespeed_report_theme($existing, $type, $theme, $path) {
+
+  return [
+    'google_pagespeed_report' => [
+      'variables' => [
+        'statistics_data' => [],
+        'information_data' => [],
+        'message' => '',
+      ],
+    ],
+  ];
+}
